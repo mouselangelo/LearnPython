@@ -1,7 +1,5 @@
 import pickle
 
-print("file...")
-
 filename = r"./test.dat"
 file = open(filename, "w")
 
