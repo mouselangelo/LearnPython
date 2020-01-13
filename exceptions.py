@@ -1,16 +1,17 @@
 import sys
 
-class ZeroException(Exception):    
+class CustomException(Exception):    
     def __init__(self, message):
-        print("custom ZeroException initialized...", message)
+        print("custom CustomException
+     initialized...", message)
         self.value = message
 
-def throws():
+def alwaysThrows():
     10 / 0
 
 def raises(num):
     if num == 0:
-        raise ZeroException("Invalid argument")
+        raise CustomException("Invalid argument")
     elif num == 1:
         raise Exception("One")
     elif num == 2:
@@ -20,28 +21,29 @@ def raises(num):
 
 def doSomething(value):
     try:
-        print("value: %s" % (value))
         if value in (0,1,2,3):
             raises(value)
         elif value == 4:
-            throws()
+            alwaysThrows()
         else:
             raises(value)
     except ZeroDivisionError:
         print("ZeroDivisionError handler", sys.exc_value)
-    except ZeroException:
-        print("ZeroException handler", sys.exc_value)
+    except CustomException:
+        print("CustomException handler", sys.exc_value)
     except Exception:
         print("Exception handler", sys.exc_value)
     except:
         ## never called?
         print("generic handler", sys.exc_value)
     else:
-        print("hurray")
+        print("no exception thrown - do something...")
     finally:
         print("done!")
-        print("")
 
 
 for num in range(6):
+    print("when: %s" % num)
     doSomething(num)
+    print("")
+
