@@ -19,7 +19,7 @@ Learning about `class`. Declares the `class Song`
 
 ### imports.py
 
-Imports the `Song` class from the `songs` module and uses it. Also prints its `__doc__` (`docstrings`)
+Imports the `Song` class from the `song` module and uses it. Also prints its `__doc__` (`docstrings`)
 
 ## arrays.py & arrayBasics.py
 
