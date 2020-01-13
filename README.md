@@ -2,13 +2,13 @@
 
 ## To learn
 
-- [ ] Basic types
-- [ ] Conditional statements
-- [ ] Loops
-- [ ] functions
-- [ ] classes
-- [ ] imports
-- [ ] exceptions
+- [x] Basic types
+- [x] Conditional statements
+- [x] Loops
+- [x] functions
+- [x] classes
+- [x] imports
+- [x] exceptions
 - [ ] more to be added...
 
 ## Files
@@ -21,7 +21,7 @@ Learning about `class`. Declares the `class Song`
 
 Imports the `Song` class from the `songs` module and uses it. Also prints its `__doc__` (`docstrings`)
 
-## arrays.py
+## arrays.py & arrayBasics.py
 
 Experimenting with arrays and dictionaries
 
