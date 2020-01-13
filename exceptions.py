@@ -2,8 +2,7 @@ import sys
 
 class CustomException(Exception):    
     def __init__(self, message):
-        print("custom CustomException
-     initialized...", message)
+        print("custom CustomException initialized...", message)
         self.value = message
 
 def alwaysThrows():
